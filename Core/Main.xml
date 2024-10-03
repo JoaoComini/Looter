@@ -1,0 +1,18 @@
+<UI xmlns="http://www.blizzard.com/wow/ui/">
+    <Frame name="Main" parent="UIParent" virtual="true">
+        <Size>
+            <AbsDimension x="196" y="96"/>
+        </Size>
+        <Anchors>
+            <Anchor point="CENTER"/>
+        </Anchors>
+        <Frames>
+            <Frame name="LootHistory" inherits="LootHistoryTemplate">
+               <Anchors>
+                    <Anchor point="TOPLEFT"/>
+                    <Anchor point="BOTTOMRIGHT"/>
+                </Anchors>
+            </Frame>
+        </Frames>
+    </Frame>
+</UI>

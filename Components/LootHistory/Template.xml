@@ -1,0 +1,58 @@
+<UI xmlns="http://www.blizzard.com/wow/ui/">
+    <Frame name="LootHistoryTemplate" inherits="BackdropTemplate" mixin="LootHistoryMixin" virtual="true" >
+        <KeyValues>
+            <KeyValue key="backdropInfo" value="BACKDROP_16_16_4444" type="global"/>
+        </KeyValues>   
+        <Frames>
+            <Button name="Test" inherits="LootHistoryEntryTemplate">
+                <Anchors>
+                    <Anchor point="CENTER"/>
+                </Anchors>
+            </Button>
+            <ScrollFrame
+                inherits="FauxScrollFrameTemplate"
+                mixin="LootHistoryScrollMixin"
+                parentKey="Scroll"
+                virtual="true"
+            >
+                <Anchors>
+                    <Anchor point="TOPLEFT" />
+                    <Anchor point="BOTTOMRIGHT" />
+                </Anchors>
+                <Scripts>
+                    <OnVerticalScroll method="OnVerticalScroll" />
+                    <OnShow method="OnShow" />
+                </Scripts>
+            </ScrollFrame>
+            <Button parentKey="Entry1" parentArray="Buttons" inherits="LootHistoryEntryTemplate">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent.Scroll" relativePoint="TOPLEFT">
+                        <Offset>
+                            <AbsDimension x="8" y="0" />
+                        </Offset>
+                    </Anchor>
+                </Anchors>
+            </Button>
+            <Button parentKey="Entry2" parentArray="Buttons" inherits="LootHistoryEntryTemplate">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent.Entry1" relativePoint="BOTTOMLEFT" />
+                </Anchors>
+            </Button>
+            <Button parentKey="Entry3" parentArray="Buttons" inherits="LootHistoryEntryTemplate">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent.Entry2" relativePoint="BOTTOMLEFT" />
+                </Anchors>
+            </Button>
+            <Button parentKey="Entry4" parentArray="Buttons" inherits="LootHistoryEntryTemplate">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent.Entry3" relativePoint="BOTTOMLEFT" />
+                </Anchors>
+            </Button>
+            <Button parentKey="Entry5" parentArray="Buttons" inherits="LootHistoryEntryTemplate">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeKey="$parent.Entry4" relativePoint="BOTTOMLEFT" />
+                </Anchors>
+            </Button>
+        </Frames>
+    </Frame>
+</UI>

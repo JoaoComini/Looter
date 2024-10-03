@@ -1,0 +1,24 @@
+## Interface: 110002
+## DefaultState: enabled
+
+## Title: Looter
+## Notes: 
+## Author: Comini
+## Version: 0.0.1
+## SavedVariables: LooterDB
+
+## X-Email: joaocomini@gmail.com
+## X-Category:
+## X-LoadOn-Always: delayed
+
+Components/LootHistoryEntry/Template.xml
+
+Components/LootHistory/Mixin.lua
+Components/LootHistory/Template.xml
+
+Core/Addon.lua
+Core/Display.lua
+Core/Price.lua
+Core/Summary.lua
+Core/Main.lua
+Core/Main.xml

@@ -1,0 +1,8 @@
+<UI xmlns="http://www.blizzard.com/wow/ui/">
+    <Button name="LootHistoryEntryTemplate" virtual="true">
+        <Size>
+            <AbsDimension x="150" y="16" />
+        </Size>
+        <NormalFont style="GameFontHighlightLeft" />
+    </Button>
+</UI>
