@@ -30,7 +30,7 @@ function OnAddonLoaded(name)
 end
 
 function OnChatMsgLoot(message)
-    local link, quantity = string.match(message, "(|c%x+|Hitem:.*|r)(.*)")
+    local link, quantity = string.match(message, "You receive loot: (|c%x+|Hitem:.*|r)(.*)")
 
     if not link then
         return
